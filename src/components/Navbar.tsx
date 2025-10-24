@@ -56,6 +56,12 @@ const Navbar = () => {
                     </Button>
                   </Link>
                 )}
+                <Link to="/profile">
+                  <Button variant="outline" size="sm" className="ml-2">
+                    <User className="h-4 w-4 mr-2" />
+                    Profile
+                  </Button>
+                </Link>
                 <Button variant="ghost" size="sm" onClick={signOut} className="ml-2">
                   <LogOut className="h-4 w-4 mr-2" />
                   Sign Out
@@ -109,6 +115,12 @@ const Navbar = () => {
                     </Button>
                   </Link>
                 )}
+                <Link to="/profile" onClick={() => setIsOpen(false)}>
+                  <Button variant="outline" size="sm" className="w-full my-1">
+                    <User className="h-4 w-4 mr-2" />
+                    Profile
+                  </Button>
+                </Link>
                 <Button
                   variant="ghost"
                   size="sm"
